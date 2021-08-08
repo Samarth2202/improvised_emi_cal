@@ -15,7 +15,7 @@ tenure = st.sidebar.slider('Loan Period(in years)',1,30)
 n = tenure*12
 roi = st.sidebar.slider('Rate of Interest(in % per annum)',1,15)
 r = roi/12
-m = st.sidebar.slider('Period after which the Outstanding Loan Balance is calculated (in months)',1,n,(0.25,0.5))
+m = st.sidebar.slider('Period after which the Outstanding Loan Balance is calculated (in months)',1,n)
 if st.sidebar.button('Calculate EMI'):
   'Your EMI is : ',calculate_emi(principal, n, r)
 if st.sidebar.button('Calculate Outstaning Loan Balance'):
