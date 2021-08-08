@@ -17,5 +17,5 @@ r = roi/12
 m = st.sidebar.slider('Period after which the Outstanding Loan Balance is calculated (in months)',1,n,(0.25,0.5,0.75))
 if st.sidebar.button('Calculate EMI'):
   'Your EMI is : ',calculate_emi(principal, n, r)
-if st.sidebar.buttom('Calculate Outstaning Loan Balance'):
+if st.sidebar.button('Calculate Outstaning Loan Balance'):
   'Your Outstanding Loan Balance is : ',calculate_outstanding_balance(principal, n, r, m)
