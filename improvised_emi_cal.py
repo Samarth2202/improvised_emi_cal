@@ -6,7 +6,7 @@ def calculate_emi(p, n, r):
 
 @st.cache()
 def calculate_outstanding_balance(p, n, r, m):
-  return round(p*((r/100)**n) - ((1+(r/100))**m))/((1+(r/100))**n - 1)),2)
+  return round((p*((r/100)**n) - ((1+(r/100))**m))/((1+(r/100))**n - 1),2)
 
 st.title('EMI Calaculator')
 principal = st.sidebar.slider('Principal Loan Amount',1000,{100000:,2f})
